@@ -3,8 +3,7 @@
 """Console script for ignore."""
 import sys
 import argparse
-from ignore import Ignore
-
+from .ignore import IgnoreCLI
 
 def main():
     parser = argparse.ArgumentParser(
@@ -14,7 +13,7 @@ def main():
     args = parser.parse_args()
 
     templates = args.templates
-    gitignore = Ignore()
+    gitignore = IgnoreCLI()
 
     if len(templates) > 0:
         if not gitignore.gitignore_existed():
