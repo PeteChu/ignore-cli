@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""Console script for ignore."""
+"""Console script for ignoreCLI."""
 import sys
 import argparse
 from .ignore import IgnoreCLI
@@ -23,7 +23,7 @@ def main():
 
         for template in templates:
             gitignore.update_gitignore(template)
-        print('.gitignore file updated.')
+        print('Done.')
 
     return 0
 
