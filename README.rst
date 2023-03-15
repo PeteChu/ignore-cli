@@ -6,8 +6,8 @@ ignore
 .. image:: https://img.shields.io/pypi/v/ignore.svg
         :target: https://pypi.python.org/pypi/ignore
 
-.. image:: https://img.shields.io/travis/petechu/ignore.svg
-        :target: https://travis-ci.org/petechu/ignore
+.. image:: https://img.shields.io/travis/petechu/ignore-cli.svg
+        :target: https://travis-ci.org/petechu/ignore-cli
 
 .. image:: https://readthedocs.org/projects/ignore/badge/?version=latest
         :target: https://ignore.readthedocs.io/en/latest/?badge=latest

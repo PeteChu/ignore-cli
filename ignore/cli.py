@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 
-"""Console script for ignore."""
+"""Console script for ignoreCLI."""
 import sys
 import argparse
-from ignore import Ignore
-
+from ignore import IgnoreCLI
 
 def main():
     parser = argparse.ArgumentParser(
@@ -14,7 +13,7 @@ def main():
     args = parser.parse_args()
 
     templates = args.templates
-    gitignore = Ignore()
+    gitignore = IgnoreCLI()
 
     if len(templates) > 0:
         if not gitignore.gitignore_existed():
@@ -24,7 +23,7 @@ def main():
 
         for template in templates:
             gitignore.update_gitignore(template)
-        print('.gitignore file updated.')
+        print('Done.')
 
     return 0
 
