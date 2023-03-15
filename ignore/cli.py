@@ -3,7 +3,7 @@
 """Console script for ignoreCLI."""
 import sys
 import argparse
-from ignore import IgnoreCLI
+from .ignore import IgnoreCLI
 
 def main():
     parser = argparse.ArgumentParser(
